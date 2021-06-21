@@ -17,12 +17,11 @@ export class TodoPostEntity {
   @Column({ default: "" })
   body: string;
 
+  
   @Column({type: 'timestamp', default: () => 'CURRENT_TIMESTAMP'})
     createdAt: Date;
 
- // @CreateDateColumn()
-  //createdAt: Date;
 
- // @ManyToOne(() => UserEntity, (userEntity) => userEntity.feedPosts)
-  //author: UserEntity;
+
+ 
 }
